@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f3e9">
+<title>Raghottam & Anagha | Wedding & Reception</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Great+Vibes&display=swap');
+:root{--cream:#f8f3e9;--paper:#fffdf8;--green:#173f35;--green2:#28594a;--gold:#b1843d;--gold-light:#e6d2a7;--rose:#d99a9b;--ink:#24352e;--muted:#6f786f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit}
+.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px clamp(18px,5vw,70px);background:#fffdf8eF;backdrop-filter:blur(12px);border-bottom:1px solid #e8dcc3}
+.brand{font-family:'DM Serif Display',serif;letter-spacing:.12em;color:var(--green);font-size:1.1rem;white-space:nowrap}.brand span{color:var(--gold)}nav{display:flex;gap:clamp(10px,2.4vw,28px);align-items:center;font-size:.85rem;color:#4e5b52}nav a{text-decoration:none}nav a:hover{color:var(--gold)}
+.pill{border:1px solid var(--gold);border-radius:999px;padding:9px 15px;color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap}
+.hero{position:relative;overflow:hidden;padding:clamp(58px,9vw,110px) 20px 65px;text-align:center;background:radial-gradient(ellipse at 50% 30%,#fffdf9 0,#f8f3e9 62%,#f1e7d5 100%)}
+.hero:before,.hero:after{content:"❧";position:absolute;color:#b7c4a6;font-size:clamp(90px,18vw,210px);opacity:.35;pointer-events:none}.hero:before{left:-40px;top:20px;transform:rotate(-35deg)}.hero:after{right:-40px;bottom:-15px;transform:rotate(145deg)}
+.kicker{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}.hindi{color:var(--gold);font-family:'DM Serif Display',serif;font-size:1.15rem;letter-spacing:.2em}
+h1{font:clamp(2.8rem,8vw,6.5rem)/1.05 'Great Vibes',cursive;color:var(--green);font-weight:400;margin:22px 0 8px}.amp{font:italic 1.7rem 'DM Serif Display',serif;color:var(--gold)}.hero-sub{max-width:650px;margin:18px auto;color:#5d6a60;line-height:1.8}.rule{color:var(--gold);letter-spacing:.4em;margin:22px auto;font-size:1.15rem}
+.date-chip{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gold-light);border-radius:999px;padding:10px 18px;background:#fffaf0;color:var(--green);font-size:.88rem}
+.countdown-wrap{max-width:760px;margin:35px auto 0;padding:24px 18px;border:1px solid #dfc895;border-radius:22px;background:#fffdf8c9;box-shadow:0 14px 40px #59421a0a}
+.countdown-title{margin:0 0 16px;color:var(--green);font:1.45rem 'DM Serif Display',serif}.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.timebox{padding:13px 5px;border:1px solid #eee2c8;border-radius:13px;background:#faf5e9}.num{font:clamp(1.7rem,4vw,2.4rem)/1.1 'DM Serif Display',serif;color:var(--green)}.unit{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:5px}
+.section{padding:65px 20px}.section-inner{max-width:1050px;margin:auto}.section-heading{text-align:center;margin:0;color:var(--green);font:clamp(2rem,5vw,3.2rem) 'DM Serif Display',serif}.section-intro{text-align:center;color:var(--muted);margin:8px 0 32px;font-size:.9rem}
+.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.event{position:relative;background:var(--paper);border:1px solid #e8d8b6;border-radius:22px;padding:clamp(24px,4vw,38px);text-align:center;box-shadow:0 12px 35px #59421a08}.event-label{display:inline-block;background:#f2e4c7;color:#775523;border-radius:999px;padding:7px 16px;font-size:.7rem;font-weight:700;letter-spacing:.18em}.event h3{font:2rem 'DM Serif Display',serif;color:var(--green);margin:17px 0 4px}.event-date{font-weight:700;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}.event p{line-height:1.7;margin:10px 0}.event .place{font-weight:700;color:var(--green);font-size:1.15rem}.event-icon{font-size:1.7rem;color:var(--gold);margin-top:12px}.map-btn{display:inline-block;margin-top:13px;padding:11px 20px;border-radius:999px;background:var(--green);color:white;text-decoration:none;font-size:.85rem;font-weight:600}.map-btn:hover{background:var(--green2)}
+.invite{background:var(--green);color:#fff9ec;text-align:center;padding:58px 20px}.invite h2{font:clamp(2rem,5vw,3rem) 'DM Serif Display',serif;font-weight:400;margin:0 0 15px}.invite p{max-width:680px;margin:0 auto;line-height:1.9;color:#e6e9dc}.invite .gold{color:#e5c47e}
+.hosts{padding:56px 20px;text-align:center}.hosts h2{font:2rem 'DM Serif Display',serif;color:var(--green);margin:0 0 24px}.host-name{font-weight:700;color:var(--green)}.host-place{color:var(--muted);margin-top:5px}
+.footer{position:relative;text-align:center;padding:35px 20px 45px;background:#f0e6d3;color:var(--green)}.footer-script{font:2.2rem 'Great Vibes',cursive;color:var(--green)}.small{font-size:.78rem;color:var(--muted);margin-top:10px}
+@media(max-width:700px){nav{display:none}.topbar{padding:13px 18px}.events{grid-template-columns:1fr}.section{padding:48px 16px}.hero:before{left:-65px}.hero:after{right:-65px}.countdown-wrap{padding:18px 12px}.timebox{padding:12px 2px}.unit{font-size:.62rem;letter-spacing:.06em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Raghottam and Anagha home">R <span>|</span> A</a>
+  <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#events">Celebrations</a><a href="#hosts">Family</a></nav>
+  <a class="pill" href="#events">Save the Date ↗</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hindi">॥ श्री ॥</div>
+  <div class="rule">— ✦ —</div>
+  <div class="kicker">Together with our families</div>
+  <p class="hero-sub">With immense joy, I invite you and your family to celebrate the wedding and reception</p>
+  <h1>Raghottam <span class="amp">&amp;</span> Anagha</h1>
+  <div class="rule">❧ ♡ ❧</div>
+  <div class="date-chip">✦ &nbsp; 26 November · Wedding &nbsp; | &nbsp; 29 November · Reception &nbsp; ✦</div>
+  <div class="countdown-wrap" aria-live="polite">
+    <h2 class="countdown-title" id="countdownHeading">Counting down to the wedding</h2>
+    <div class="countdown">
+      <div class="timebox"><div class="num" id="days">--</div><div class="unit">Days</div></div>
+      <div class="timebox"><div class="num" id="hours">--</div><div class="unit">Hours</div></div>
+      <div class="timebox"><div class="num" id="minutes">--</div><div class="unit">Minutes</div></div>
+      <div class="timebox"><div class="num" id="seconds">--</div><div class="unit">Seconds</div></div>
+    </div>
+    <p id="countdownCaption" style="margin:15px 0 0;color:#6f786f;font-size:.82rem">Until Thursday, 26 November 2026</p>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <div class="section-inner">
+    <h2 class="section-heading">Two Special Celebrations</h2>
+    <p class="section-intro">A new chapter, shared with the people we love</p>
+    <div class="events">
+      <article class="event">
+        <span class="event-label">THE WEDDING</span>
+        <div class="event-icon">♧</div>
+        <div class="event-date">Thursday · 26 November 2026</div>
+        <h3>Wedding Ceremony</h3>
+        <p class="place">Laxmi Narayan Kalyan Mantap</p>
+        <p>Kalburgi (Gulbarga)<br><strong>Muhurtham: 10:30 AM onwards</strong></p>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Laxmi+Narayan+Kalyan+Mantap+Kalaburagi+Karnataka" target="_blank" rel="noopener">⌖ Get Directions</a>
+      </article>
+      <article class="event">
+        <span class="event-label">THE RECEPTION</span>
+        <div class="event-icon">✧</div>
+        <div class="event-date">Sunday · 29 November 2026</div>
+        <h3>Wedding Reception</h3>
+        <p class="place">Joshi Function Hall</p>
+        <p>Chidambar Nagar, Opp. Sharada Public School,<br>Vijayapura<br><strong>6:30 PM onwards</strong></p>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Joshi+Function+Hall+Chidambar+Nagar+Opposite+Sharada+Public+School+Vijayapura" target="_blank" rel="noopener">⌖ Get Directions</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="invite">
+  <div class="kicker gold">A heartfelt invitation</div>
+  <h2>You and your family are cordially invited</h2>
+  <p>We would be honoured by your presence and blessings as Raghottam and Anagha begin this beautiful journey together. Your presence will make our celebrations truly memorable.</p>
+</section>
+
+<section class="hosts" id="hosts">
+  <h2>With Best Compliments From</h2>
+  <div class="host-name">Smt. Padmavati &amp; Shri Pandurang Jagannath Joshi</div>
+  <div class="host-place">Vijayapura</div>
+  <p style="margin-top:18px;font-size:.9rem">Mob.: 9886270509 / 9986186646 / 9742263742</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-script">Our joy will be complete with your presence</div>
+  <div class="rule">♡</div>
+  <a class="pill" href="#events">Keep the Dates in Mind ↑</a>
+  <div class="small">Raghottam &amp; Anagha · November 2026</div>
+</footer>
+
+<script>
+(function(){
+  const wedding = new Date(2026,10,26,10,30,0);
+  const reception = new Date(2026,10,29,18,30,0);
+  const $ = id => document.getElementById(id);
+  function tick(){
+    const now = new Date();
+    const target = now < wedding ? wedding : now < reception ? reception : null;
+    if(!target){
+      $('countdownHeading').textContent='The celebrations have begun!';
+      $('countdownCaption').textContent='Thank you for being part of our joy.';
+      ['days','hours','minutes','seconds'].forEach(id=>$(id).textContent='0');
+      return;
+    }
+    const diff = Math.max(0,target-now);
+    $('days').textContent=Math.floor(diff/86400000);
+    $('hours').textContent=Math.floor(diff/3600000)%24;
+    $('minutes').textContent=Math.floor(diff/60000)%60;
+    $('seconds').textContent=Math.floor(diff/1000)%60;
+    if(target===wedding){
+      $('countdownHeading').textContent='Counting down to the wedding';
+      $('countdownCaption').textContent='Until Thursday, 26 November 2026 · 10:30 AM';
+    }else{
+      $('countdownHeading').textContent='Next up: the reception';
+      $('countdownCaption').textContent='Until Sunday, 29 November 2026 · 6:30 PM';
+    }
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
